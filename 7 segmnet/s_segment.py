@@ -94,4 +94,4 @@ class ssegment:
 				GPIO.output(pinMap[i], GPIO.LOW)
 
 	def reset(self):
-		GPIO.output(list(self.a, self.b, self.c, self.d, self.e, self.g, self.h, self.pwr), GPIO.HIGH)
+		GPIO.output(list([self.a, self.b, self.c, self.d, self.e, self.f, self.g, self.pwr]), GPIO.HIGH)
