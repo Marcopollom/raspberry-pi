@@ -2,11 +2,9 @@ from motor import motor
 import time
 import sys
 
-
 def main():
 
-    motor1 = motor(7, 11)
-
+    motor1 = motor(7, 11, 15)
 
     if len(sys.argv) > 2 and sys.argv[1] == 's':
         motor1.stop()
@@ -18,11 +16,12 @@ def main():
 
     motor1.backward()
 
-    time.sleep(5)
+    time.sleep(2.5)
 
+    motor1.speed(50)
     motor1.forward()
-
-    time.sleep(5)
+    
+    time.sleep(2.5)
 
     motor1.stop()
 
